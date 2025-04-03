@@ -17,7 +17,7 @@ export class WebsocketService {
   }
 
   private connectWebSocket() {
-    this.socket = new WebSocket('ws://192.168.100.17:2026/api');
+    this.socket = new WebSocket('ws://172.18.12.54:8000/ws');
 
     this.socket.onopen = () => console.log('WebSocket verbunden');
 
