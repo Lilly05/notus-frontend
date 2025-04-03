@@ -15,14 +15,7 @@ export class AppComponent implements OnDestroy{
   constructor(private websocketService: WebsocketService) {}
 
   ngOnInit() {
-    this.messagesSubscription = this.websocketService.messages$.subscribe(
-        message => {
-          if (message) {
-            console.log(message);
-            this.messages.push(message);
-          }
-        }
-    );
+
   }
 
   ngOnDestroy() {

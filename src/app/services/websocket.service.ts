@@ -17,12 +17,11 @@ export class WebsocketService {
   }
 
   private connectWebSocket() {
-    this.socket = new WebSocket('ws://172.18.12.54:8000/ws');
+    this.socket = new WebSocket('ws://172.18.12.54:8080/ws');
 
     this.socket.onopen = () => console.log('WebSocket verbunden');
 
     this.socket.onmessage = (event) => {
-      console.log('Nachricht erhalten:', event.data);
       this.messagesSubject.next(event.data); // Neue Nachricht an alle Subscriber senden
     };
 

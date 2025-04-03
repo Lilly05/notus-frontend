@@ -36,6 +36,8 @@ import {MatSelectModule} from "@angular/material/select";
     LuftqualitaetComponent,
   ],
   providers: [],
+  exports: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

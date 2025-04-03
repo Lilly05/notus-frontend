@@ -9,7 +9,7 @@ import * as Chartist from 'chartist';
 export class DashboardComponent {
 
   constructor() { }
-  /*startAnimationForLineChart(chart){
+  startAnimationForLineChart(chart){
       let seq: any, delays: any, durations: any;
       seq = 0;
       delays = 80;
@@ -66,7 +66,7 @@ export class DashboardComponent {
       seq2 = 0;
   };
   ngOnInit() {
-      /!* ----------==========     Daily Sales Chart initialization For Documentation    ==========---------- *!/
+      /* ----------==========     Daily Sales Chart initialization For Documentation    ==========---------- */
 
       const dataDailySalesChart: any = {
           labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
@@ -89,7 +89,7 @@ export class DashboardComponent {
       this.startAnimationForLineChart(dailySalesChart);
 
 
-      /!* ----------==========     Completed Tasks Chart initialization    ==========---------- *!/
+      /* ----------==========     Completed Tasks Chart initialization    ==========---------- */
 
       const dataCompletedTasksChart: any = {
           labels: ['12p', '3p', '6p', '9p', '12p', '3a', '6a', '9a'],
@@ -114,7 +114,7 @@ export class DashboardComponent {
 
 
 
-      /!* ----------==========     Emails Subscription Chart initialization    ==========---------- *!/
+      /* ----------==========     Emails Subscription Chart initialization    ==========---------- */
 
       var datawebsiteViewsChart = {
         labels: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
@@ -145,6 +145,6 @@ export class DashboardComponent {
 
       //start animation for the Emails Subscription Chart
       this.startAnimationForBarChart(websiteViewsChart);
-  }*/
+  }
 
 }
