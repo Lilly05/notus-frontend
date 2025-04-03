@@ -1,0 +1,14 @@
+.notus {
+    font-size: 2rem !important;
+    margin-left: 80px !important;
+    margin-bottom: 30px !important;
+    margin-top: 30px !important;
+    font-weight: bold;
+}
+
+.airquality-img {
+    height: 50px;
+    margin-left: 15px;
+    position: absolute;
+    margin-top: -10px !important;
+}
